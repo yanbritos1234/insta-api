@@ -10,7 +10,7 @@ const RAPIDAPI_KEY = "9308c532e4msh276406204cdf97dp178639jsn5d69d53284e3";
 
 app.post("/api/foto", async (req, res) => {
   const rawUsername = req.body.username || "";
-  const username = rawUsername.replace(/^@/, ""); // remove @ se for enviado
+  const username = rawUsername.replace(/^@/, "");
 
   try {
     const response = await axios.get(
@@ -31,7 +31,7 @@ app.post("/api/foto", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`✅ API rodando na porta ${PORT}`);
 });
