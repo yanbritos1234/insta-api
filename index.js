@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const RAPIDAPI_KEY = "SEU_KEY_AQUI"; // troca pela tua key real
+const RAPIDAPI_KEY = "9308c532e4msh276406204cdf97dp178639jsn5d69d53284e3"; // troca pela tua key real
 
 app.post("/api/foto", async (req, res) => {
   const rawUsername = req.body.username || "";
